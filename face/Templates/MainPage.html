@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Report</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Отчет:</h1>
+                <p class="lead">Тест кейсов успешно выполнено:
+                    <span class="$style_count_passed_test_cases">$count_passed_test_cases</span>
+                    из $count_test_cases
+                </p>
+                <hr class="my-4">
+            </div>
+            <div>
+                $test_scenarios
+            </div>
+        </div>
+    </div>
+</body>
+</html>
