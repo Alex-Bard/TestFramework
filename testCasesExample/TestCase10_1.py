@@ -19,9 +19,9 @@ class TestCase10_1(TestCase):
         self.print_log("отправка ping запроса на адрес '192.168.19.128'")
         if subprocess.call(command) == 0:
             self.print_log("ping запрос прошел успешно")
-            self.status = TestCaseStatuses.passed
+            self.complete_successfully()
         else:
             self.print_log("ping запрос прошел неуспешно", TestCasLogStatuses.danger)
-            self.status = TestCaseStatuses.failed
+            self.complete_with_error()
     def after_test(self):
         pass
